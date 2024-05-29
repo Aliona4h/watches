@@ -1,3 +1,60 @@
-body {
-  width: ;
+/* ====================RESET========= */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+ul,
+ol,
+li{
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+}
+img{
+    display: block;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: #ffff;
+    background-color: #000000;
+    min-width: 375px;
+}
+/* ====================END RESET========= */
+
+/* =====================CONTAINER==========*/
+.container{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/* ====================END CONTAINER======== */
+
+/*=================== HEADER =================*/
