@@ -478,15 +478,18 @@ section {
   font-weight: 400;
 }
 .content-more {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
 }
 .tags {
+  position: absolute;
   font-family: 'PT Sans';
   font-size: 18px;
   text-transform: uppercase;
-  text-align: right;
+  bottom: 0;
+  right: 0;
 }
 
 .section__articles button {
