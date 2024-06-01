@@ -158,7 +158,8 @@ section {
   font-size: 14px;
   color: #777;
   margin: 0 15px;
-  transition: color 0.3s;
+  transition: color 0.5s, background-color 0.5s;
+  padding: 28px;
 }
 .header__nav-icons-img {
   width: 22px;
@@ -168,7 +169,11 @@ section {
 .header__nav-link-item:hover a,
 .header__nav-link-item:focus a {
   color: #fff;
-  /* background-color: #777; */
+  background-color: #1f1f1f;
+}
+
+.header__btn {
+  background-color: #6a6565ba;
 }
 
 /*=============== END HEADER ==============*/
@@ -215,6 +220,7 @@ section {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
 /* =============END HERO================ */
 
 /* =============COLLECTION================ */
@@ -558,69 +564,247 @@ section {
 }
 /* ===============END FOOTER==================== */
 
-/* ========MEDIA QUERIES========== */
+/* ==================MEDIA QUERIES================= */
 
-/* ==== screens >=1920px ====== */
-@media (min-width: 1920px) {
-  .header__top {
-    font-size: 14px;
+@media only screen and (max-width: 767px) {
+  .section__title {
+    font-size: 30px;
   }
-}
 
-/*==== screens 1440px to 1919px ====*/
-@media (min-width: 1440px) and (max-width: 1919px) {
-  .header__top {
-    font-size: 13px;
+  .hero__logo {
+    padding: 80px 40px;
   }
-}
 
-/*=== screens 1024px to 1439px ====*/
-@media (min-width: 1024px) and (max-width: 1439px) {
-  .header__top {
+  .hero__logo-title {
+    font-size: 54px;
+  }
+
+  .hero__logo-city {
+    font-size: 20px;
+  }
+
+  .hero__description-text {
     font-size: 12px;
   }
-}
-/*=== screens 768px to 1023px ===*/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header__top {
-    font-size: 11px;
+
+  .left {
+    padding: 50px 20px;
   }
 
-  .header__contact-item {
-    padding-right: 5px;
-  }
-}
-/*=== screens 767px =====*/
-@media (max-width: 767px) {
-  .header__top {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 10px;
+  .card img {
+    padding: 20px;
   }
 
-  .container {
-    padding: 0 10px;
+  .new__collection {
+    background-size: contain;
   }
 
-  .header__contact-info {
-    flex-direction: column;
-    gap: 5px;
+  .right {
+    margin-bottom: 50px;
+  }
+  .section__collection {
+    display: block;
+  }
+  .collection__btn {
+    width: 120px;
+    padding: 10px 15px;
   }
 
-  .header__contact-item::after {
-    content: '';
+  .collection__btn-old {
+    width: 250px;
   }
 
-  .header__contact-item {
-    padding-right: 0;
+  .section__articles {
+    padding: 40px 20px;
   }
 
-  .header__user-login {
-    order: -1;
-    align-self: flex-end;
-    text-align: right;
-    padding-bottom: 5px;
+  .content {
+    margin: 0 40px;
+  }
+
+  .section__articles button {
+    width: 110px;
   }
 }
 
-/* ========END MEDIA QUERIES========== */
+/* ========== < 1024px========= */
+
+@media only screen and (max-width: 1023px) {
+  .section__title {
+    font-size: 32px;
+  }
+
+  .hero__logo {
+    padding: 90px 50px;
+  }
+
+  .hero__logo-title {
+    font-size: 58px;
+  }
+
+  .hero__logo-city {
+    font-size: 22px;
+  }
+
+  .hero__description-text {
+    font-size: 15px;
+  }
+
+  .left {
+    padding: 60px 30px;
+  }
+
+  .card img {
+    padding: 25px 15px;
+  }
+
+  .new__collection {
+    background-size: auto 100%;
+  }
+
+  .right {
+    margin-bottom: 60px;
+  }
+
+  .collection__btn {
+    width: 130px;
+    padding: 10px 18px;
+  }
+
+  .collection__btn-old {
+    width: 270px;
+  }
+
+  .section__articles {
+    padding: 50px 20px;
+  }
+
+  .content {
+    margin: 0 50px;
+  }
+
+  .section__articles button {
+    width: 120px;
+  }
+}
+
+/* ======================<1440px ================*/
+
+@media only screen and (max-width: 1439px) {
+  .section__title {
+    font-size: 34px;
+  }
+
+  .hero__logo {
+    padding: 100px 60px;
+  }
+
+  .hero__logo-title {
+    font-size: 62px;
+  }
+
+  .hero__logo-city {
+    font-size: 24px;
+  }
+
+  .hero__description-text {
+    font-size: 16px;
+  }
+
+  .left {
+    padding: 70px 40px;
+  }
+
+  .card img {
+    padding: 30px 20px;
+  }
+
+  .new__collection {
+    background-size: auto 100%;
+  }
+
+  .right {
+    margin-bottom: 70px;
+  }
+
+  .collection__btn {
+    width: 140px;
+    padding: 10px 20px;
+  }
+
+  .collection__btn-old {
+    width: 290px;
+  }
+
+  .section__articles {
+    padding: 60px 20px;
+  }
+
+  .content {
+    margin: 0 60px;
+  }
+
+  .section__articles button {
+    width: 130px;
+  }
+}
+
+/* ===============================< 1920px */
+@media only screen and (max-width: 1919px) {
+  .section__title {
+    font-size: 36px;
+  }
+
+  .hero__logo {
+    padding: 110px 65px;
+  }
+
+  .hero__logo-title {
+    font-size: 64px;
+  }
+
+  .hero__logo-city {
+    font-size: 24px;
+  }
+
+  .hero__description-text {
+    font-size: 16px;
+  }
+
+  .left {
+    padding: 70px 50px;
+  }
+
+  .card img {
+    padding: 35px 20px;
+  }
+
+  .new__collection {
+    background-size: cover;
+  }
+
+  .right {
+    margin-bottom: 80px;
+  }
+
+  .collection__btn {
+    width: 140px;
+    padding: 10px 20px;
+  }
+
+  .collection__btn-old {
+    width: 290px;
+  }
+
+  .section__articles {
+    padding: 60px 20px;
+  }
+
+  .content {
+    margin: 0 80px;
+  }
+
+  .section__articles button {
+    width: 130px;
+  }
+}

@@ -11,12 +11,12 @@
       rel="stylesheet"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -26,18 +26,27 @@
     <!--HEADER-->
     <header class="header">
       <div class="container">
-        <div class="header__top">
+        <div
+          class="header__top d-flex justify-content-between align-items-center"
+        >
           <div class="header__contact-info">
-            <a href="index.html" class="header__contact-item"
-              ><img src="./images/svg/phone.svg" alt="phone icon" /> 8 (812)
-              123-45-67</a
+            <a
+              href="index.html"
+              class="header__contact-item d-flex align-items-center"
             >
+              <img src="./images/svg/phone.svg" alt="phone icon" class="me-2" />
+              8 (812) 123-45-67
+            </a>
             <p class="header__contact-item">Працюємо 7 днів на тиждень</p>
             <p class="header__contact-item">9:00 – 18:00</p>
           </div>
           <div class="header__user-login">
-            <a href="#">
-              <img src="./images/svg/log-in.svg" alt="Login Icon" />
+            <a href="#" class="d-flex align-items-center">
+              <img
+                src="./images/svg/log-in.svg"
+                alt="Login Icon"
+                class="me-2"
+              />
               Вхід / Реєстрація
             </a>
           </div>
@@ -45,38 +54,56 @@
       </div>
       <div class="header__bottom">
         <div class="container">
-          <nav class="header__nav">
-            <a href="index.html" class="header__nav-logo">porten</a>
-            <ul class="header__nav-link">
-              <li class="header__nav-link-item"><a href="#">Сподобалось</a></li>
-              <li class="header__nav-link-item">
-                <a href="#">Особистий Кабінет</a>
-              </li>
-              <li class="header__nav-link-item">
-                <a href="#">Налаштування</a>
-              </li>
-              <li class="header__nav-link-item">
-                <a href="#"
-                  ><img
-                    class="header__nav-icons-img"
-                    src="./images/svg/bx-cart.svg"
-                    alt="cart icon"
-                /></a>
-              </li>
-              <li class="header__nav-link-item">
-                <a href="#"
-                  ><img
-                    class="header__nav-icons-img"
-                    src="./images/svg/search.svg"
-                    alt="search icon"
-                /></a>
-              </li>
-            </ul>
+          <nav class="header__nav navbar navbar-expand-md">
+            <a href="index.html" class="header__nav-logo navbar-brand"
+              >porten</a
+            >
+            <button
+              class="navbar-toggler header__btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#headerNav"
+              aria-controls="headerNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon nav__icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="headerNav">
+              <ul class="header__nav-link navbar-nav ms-auto">
+                <li class="nav-item header__nav-link-item">
+                  <a class="nav-link" href="#">Сподобалось</a>
+                </li>
+                <li class="nav-item header__nav-link-item">
+                  <a class="nav-link" href="#">Особистий Кабінет</a>
+                </li>
+                <li class="nav-item header__nav-link-item">
+                  <a class="nav-link" href="#">Налаштування</a>
+                </li>
+                <li class="nav-item header__nav-link-item">
+                  <a class="nav-link" href="#">
+                    <img
+                      class="header__nav-icons-img"
+                      src="./images/svg/bx-cart.svg"
+                      alt="cart icon"
+                    />
+                  </a>
+                </li>
+                <li class="nav-item header__nav-link-item">
+                  <a class="nav-link" href="#">
+                    <img
+                      class="header__nav-icons-img"
+                      src="./images/svg/search.svg"
+                      alt="search icon"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
     </header>
-
     <!--MAIN-->
     <main>
       <!--HERO-->
@@ -388,6 +415,8 @@
           </div>
         </div>
       </section>
+
+      <!-- PARTNERS -->
       <section class="partners">
         <div class="container">
           <h2 class="text-center mt-0 section__title">НАШІ ПАРТНЕРИ</h2>
@@ -493,5 +522,20 @@
       </div>
     </footer>
     <script src="./index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
